@@ -1,0 +1,20 @@
+# Java class files
+*.class
+ 
+# Generated files
+*/bin/
+*/gen/
+*/out/
+*/target/
+ 
+# Gradle files
+.gradle/
+build/
+*/build/
+gradlew
+gradlew.bat
+
+# Intellij
+*.iml
+*/*.iml
+.idea
