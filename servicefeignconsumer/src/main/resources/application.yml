@@ -1,0 +1,9 @@
+server.port: 7777
+spring.application.name: service-feign-consumer
+
+feign.compression.request.enabled: true
+feign.compression.response.enabled: true
+eureka.client.serviceUrl.defaultZone: http://eureka1:1111/eureka,http://eureka2:1112/eureka
+
+ribbon.ConnectTimeout: 500
+ribbon.ReadTimeout: 1000

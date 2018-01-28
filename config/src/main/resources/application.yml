@@ -1,0 +1,11 @@
+spring.application.name: config-server
+server.port: 9010
+#git
+spring.cloud.config.server.git.uri: https://github.com/leolztang/spring-cloud-demo/
+spring.cloud.config.server.git.searchPaths: config/repos
+spring.cloud.config.server.git.username: leolztang@gmail.com
+#需要使用加密，暂时没有实现，所以这个参数通过jvm -D设置
+spring.cloud.config.server.git.password: username's password
+
+#uereka server
+eureka.client.serviceUrl.defaultZone: http://eureka1:1111/eureka,http://eureka2:1112/eureka

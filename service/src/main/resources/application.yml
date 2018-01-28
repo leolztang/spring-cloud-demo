@@ -1,0 +1,12 @@
+server.port: 2222
+spring.application.name: hello-service
+
+#config
+spring.cloud.config.discovery.enabled: true
+spring.cloud.config.discovery.serviceId: config-server
+spring.cloud.config.profile: test
+spring.cloud.config.label: master
+
+#feign
+
+eureka.client.serviceUrl.defaultZone: http://eureka1:1111/eureka,http://eureka2:1112/eureka
