@@ -1,0 +1,2 @@
+docker run -d --name jenkins -u 0 -p 50000:50000 -p 7080:8080 --volumes-from=VOL-TIMEZONE --volumes-from=VOL-JENKINS jenkins
+#需要配置jdk,maven,maven setting.xml等配置,需要对这部分做镜像封装

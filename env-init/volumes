@@ -1,0 +1,5 @@
+docker create --name VOL-TIMEZONE -v /etc/timezone:/etc/timezone -v /etc/localtime:/etc/localtime debian:jessie
+
+docker create --name VOL-JENKINS -v /var/docker_data/jenkins/jenkins_home:/var/jenkins_home -v /var/docker_data/jenkins/settings:/var/settings jenkins
+
+docker create --name VOL-NEXUS -v /var/docker_data/nexus:/sonatype-work sonatype/nexus
